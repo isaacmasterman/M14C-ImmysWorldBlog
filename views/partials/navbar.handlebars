@@ -3,8 +3,14 @@
     <ul>
       <li><a href="/">Home</a></li>
       <li><a href="/dashboard">Dashboard</a></li>
-      <li><a href="/login">Login</a></li>
-      <li><a href="/logout">Logout</a></li>
+      <li><a href="/auth/login">Login</a></li>
+      {{#if logged_in}}
+        <li>
+          <form action="/auth/logout" method="POST">
+            <button type="submit">Logout</button>
+          </form>
+        </li>
+      {{/if}}
     </ul>
   </div>
   <div class="title">

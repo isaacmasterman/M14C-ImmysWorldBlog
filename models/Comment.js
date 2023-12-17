@@ -11,7 +11,7 @@ Comment.init(
       allowNull: false,
       primaryKey: true,
       autoIncrement: true
-    },
+    }, 
     // Comment content
     content: {
       type: DataTypes.TEXT,
@@ -41,7 +41,6 @@ Comment.init(
     sequelize,
     timestamps: true, // Enables createdAt and updatedAt fields
     freezeTableName: true,
-    underscored: true,
     modelName: 'comment'
   }
 );

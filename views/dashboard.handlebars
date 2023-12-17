@@ -1,8 +1,4 @@
 <main>
-    <div class="new-post-button-container">
-        <button id="new-post-btn">New Post</button>
-    </div>
-
     {{#each userPosts}}
         <div class="blog-post">
             <div class="blog-post-header">
@@ -14,4 +10,8 @@
             </div>
         </div>
     {{/each}}
+
+    <form action="/new-post" method="GET">
+        <button type="submit" class="btn">New Post</button>
+    </form>
 </main>
