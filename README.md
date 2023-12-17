@@ -12,6 +12,7 @@ Immy's World is a personal blog platform designed for sharing life stories and e
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
+- [Known Issues](#known-issues)
 - [License](#license)
 - [Deployment](#deployment)
 
@@ -25,6 +26,27 @@ To install Immy's World, follow these steps:
 2. Sign up or log in to access your dashboard.
 3. Create new blog posts or view existing ones.
 4. Engage with other users by reading and commenting on posts.
+
+## Known Issues
+- **Fix Logout Route Issue**
+  - Problem: "Cannot GET /auth/logout" error.
+  - Solution: Implemented a POST route for logout; changed logout link to a form.
+  - Complexity: Easy
+
+- **Display Titles and Dates on Blog Posts**
+  - Problem: Missing titles and dates on blog posts.
+  - Solution: Correctly referenced and formatted the title and date in the template.
+  - Complexity: Easy
+
+- **Make Blog Posts Clickable for Comments**
+  - Problem: Non-clickable blog posts.
+  - Solution: Updated template to make posts clickable, leading to a detailed view.
+  - Complexity: Moderate
+
+- **Resolve Signup Button Server Crash**
+  - Problem: Server crash on signup.
+  - Solution: Debugged and fixed the signup route, focusing on session handling and error response.
+  - Complexity: Moderate to Hard
 
 ## License
 This project is licensed under the MIT License. For more information, please see the [LICENSE](LICENSE) file.
