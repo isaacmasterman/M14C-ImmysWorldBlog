@@ -1,0 +1,17 @@
+<main>
+    <div class="new-post-button-container">
+        <button id="new-post-btn">New Post</button>
+    </div>
+
+    {{#each userPosts}}
+        <div class="blog-post">
+            <div class="blog-post-header">
+                <h2>{{this.title}}</h2>
+                <p>{{this.date}}</p>
+            </div>
+            <div class="blog-post-content">
+                {{this.content}}
+            </div>
+        </div>
+    {{/each}}
+</main>

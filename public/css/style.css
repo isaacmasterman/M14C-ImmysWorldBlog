@@ -1,0 +1,121 @@
+/* General Body Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3d9dc; /* Light pink background */
+}
+
+/* Navigation Bar */
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background-color: #9f342d; /* Dark red background */
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.navbar a {
+    color: #f3d9dc; /* Light pink text */
+    text-decoration: none;
+}
+
+/* Title Object */
+.title {
+    background-color: #f3d9dc; /* Light pink background */
+    color: #9f342d; /* Dark red text */
+    text-align: center;
+    box-shadow: 0 2px 4px #3a4454; /* Shadow */
+    padding: 10px 0;
+}
+
+/* Blog Post Styles */
+.blog-post {
+    border: 2px solid #9f342d; /* Dark red border */
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.blog-post-header {
+    background-color: #9f342d; /* Dark red background */
+    color: #f3d9dc; /* Light pink text */
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-post-content {
+    color: #3a4454; /* Dark grey text */
+    padding: 10px;
+}
+
+/* Form Styles for Login, Signup, and New Post */
+.login-container, .signup-container, .new-post-form {
+    border: 2px solid #9f342d; /* Dark red border */
+    margin: 20px auto;
+    padding: 20px;
+    width: 300px; /* Adjust as needed */
+}
+
+.login-header, .signup-header, .form-header {
+    background-color: #9f342d; /* Dark red background */
+    color: #f3d9dc; /* Light pink text */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Input Styles */
+input[type="text"], input[type="password"], input[type="email"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box; /* Ensures padding doesn't affect overall width */
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #9f342d; /* Dark red background */
+    color: #f3d9dc; /* Light pink text */
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #83221e; /* Slightly darker red */
+}
+
+/* Comment Section Styles */
+.comment-section {
+    border: 2px solid #9f342d; /* Dark red border */
+}
+
+.comment-section-header {
+    background-color: #9f342d; /* Dark red background */
+}
+
+/* New Post Button Container */
+.new-post-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.link {
+    color: #9f342d; /* Dark red text */
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}

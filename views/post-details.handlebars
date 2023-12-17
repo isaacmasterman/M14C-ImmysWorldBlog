@@ -1,0 +1,21 @@
+<main>
+    <div class="blog-post-detail">
+        <div class="blog-post-header">
+            <h2>{{selectedPost.title}}</h2>
+            <p>By {{selectedPost.author}} on {{selectedPost.date}}</p>
+        </div>
+        <div class="blog-post-content">
+            {{selectedPost.content}}
+        </div>
+    </div>
+
+    <div class="comment-section">
+        <div class="comment-section-header">
+            <!-- No title in the header -->
+        </div>
+        <form class="comment-form" action="/post/{{selectedPost.id}}/comment" method="POST">
+            <input type="text" name="comment" placeholder="Add a comment...">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</main>
